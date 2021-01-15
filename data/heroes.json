@@ -1,0 +1,35 @@
+{
+    "data": [
+        {
+            "id" : "101",
+            "name" : "spider man",
+            "image" : "spiderman.jpg"
+        },
+        {
+            "id" : "102",
+            "name" : "Hulk",
+            "image" : "hulk.jpg"  
+        },
+        {
+            "id" : "103",
+            "name" : "Captain America",
+            "image" : "captainamerica.jpg"  
+        },
+        {
+            "id" : "104",
+            "name" : "iron man",
+            "image" : "ironman.jpg"  
+        },
+        {
+            "id" : "105",
+            "name" : "deadpool",
+            "image" : "deadpool.jpg"  
+        },
+        {
+            "id" : "106",
+            "name" : "thor",
+            "image" : "thor.jpg"  
+        }
+
+    ]
+}

@@ -1,0 +1,53 @@
+<div class="container-fluid  p-0 nav">
+    <div class="align-right">
+        <div class="profile-img"></div>
+        <div class="profile-name"></div>
+    </div>
+</div>
+
+<div class="continer m-top">
+    <div class="banner">
+        <img class="banner-img" src="/img/logo.jpg" >
+    </div>
+</div>
+
+
+<div class="container m-top">
+    <div class="row items-center">
+        <div class="col-6">
+            <a href="/login" data-navigo>login</a>
+            <h4>What's on your mind, <span id="user-name"></span> ?</h4>
+            <textarea id="post-text" name=""></textarea>
+            <input type="text" id="post-link" placeholder="Paste image link here">
+            <div>
+                <button onclick="addPost()" id="post-btn">Post It</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container m-top">
+    <div class="row items-center myposts">
+    </div>
+</div>
+
+<template id="newPost">
+    <div class="col-8">
+        <div class="row post my">
+            <div class="col-4 p-0">
+                <img class="post-photo" src="" >
+            </div>
+            <div class="col-8 post-text-wrapper">
+                <p class="newPost-text"></p>
+                <div class="comments">
+                    <div class="add-comment-box">
+                        <input type="text" class="my comment-input" placeholder="Add Comment">
+                        <button onclick="addComment(this)" class="comment-btn">add</button>
+                    </div>
+                </div>
+                <p class="post-author"></p>
+                <svg class="heart" onclick="like(this)"  version="1.1" id="Capa_1" width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 391.837 391.837" style="enable-background:new 0 0 391.837 391.837;" xml:space="preserve"><g><path class="toFill" d="M285.257,35.528c58.743,0.286,106.294,47.836,106.58,106.58c0,107.624-195.918,214.204-195.918,214.204S0,248.165,0,142.108c0-58.862,47.717-106.58,106.58-106.58l0,0c36.032-0.281,69.718,17.842,89.339,48.065C215.674,53.517,249.273,35.441,285.257,35.528z"/></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg>
+            </div>
+        </div>
+    </div>
+</template>

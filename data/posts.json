@@ -1,0 +1,92 @@
+{
+    "data": [
+        {
+            "author" : "Iron Man",
+            "image" : "post1.jpg",
+            "text" :  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+            "comments" : 
+            [
+                {
+                "text" : "It is a long established fact that a reader will be distracted by the readable content ",
+                "author" : "spider man"
+                 },
+                 {
+                     "text" : "awesome",
+                     "author" : "captain america"
+                 }
+            ]
+            
+
+        },
+        {
+            "author" : "Hulk",
+            "image" : "post2.jpg",
+            "text" :  "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.",
+            "comments" : 
+            [
+                {
+                "text" : "Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia",
+                "author" : "DeadPool"
+                 },
+                 {
+                     "text" : "LOL",
+                     "author" : "Captain America"
+                 }
+            ]
+
+        },
+
+        {
+            "author" : "Captain America",
+            "image" : "post3.jpg",
+            "text" :  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered",
+            "comments" : 
+            [
+                {
+                "text" : "alteration in some form, by injected humour, or randomised words which",
+                "author" : "Hulk"
+                 },
+                 {
+                     "text" : "If you are going to use a passage of Lorem Ipsum, you need to be sure",
+                     "author" : "Iron Man"
+                 }
+            ]
+
+        },
+        {
+            "author" : "Dead Pool",
+            "image" : "post4.jpg",
+            "text" :  "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour,",
+            "comments" : 
+            [
+                {
+                "text" : "randomised words which don't look even slightly believable.",
+                "author" : "Thor"
+                 },
+                 {
+                     "text" : "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                     "author" : "Deadpool"
+                 }
+            ]
+
+        },
+        {
+            "author" : "Dead Pool",
+            "image" : "post2.jpg",
+            "text" :  " All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words.",
+            "comments" : 
+            [
+                {
+                "text" : "randomised words which don't look even slightly believable.",
+                "author" : "Thor"
+                 },
+                 {
+                     "text" : "If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.",
+                     "author" : "Deadpool"
+                 }
+            ]
+
+        }
+        
+    ]
+}

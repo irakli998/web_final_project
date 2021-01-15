@@ -1,0 +1,366 @@
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+*,
+ ::after,
+ ::before {
+    box-sizing: border-box;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.col-3,
+.col-4,
+.col-6,
+.col-8,
+.col-9,
+.col-10,
+.col-12,
+.col {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .col-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .col-4 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+    .col-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .col-8 {
+        flex: 0 0 66.666667%;
+        max-width: 66.666667%;
+    }
+    .col-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+}
+
+
+
+.text-center{
+    text-align: center;
+}
+.my{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background: #ad5389;  /* fallback for old browsers */
+    /* background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  Chrome 10-25, Safari 5.1-6 */
+    /* background: linear-gradient(to right, #3c1053, #ad5389); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+}
+
+h2{
+    font-size: 80px;
+    font-weight: 700;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.gradient-text {
+    /* Fallback: Set a background color. */
+    background-color: #CA4246;
+    
+    /* Create the gradient. */
+     background-image: linear-gradient(
+          45deg,
+          #CA4246 16.666%, 
+          #E16541 16.666%, 
+          #E16541 33.333%, 
+          #F18F43 33.333%, 
+          #F18F43 50%, 
+          #8B9862 50%, 
+          #8B9862 66.666%, 
+          #476098 66.666%, 
+          #476098 83.333%, 
+          #A7489B 83.333%);
+    
+    /* Set the background size and repeat properties. */
+    background-size: 100%;
+    background-repeat: repeat;
+  
+    /* Use the text as a mask for the background. */
+    /* This will show the gradient as a text color rather than element bg. */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    
+    /* Animate the text when loading the element. */
+      /* This animates it on page load and when hovering out. */
+      animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+  
+  }
+
+  .gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+.card{
+    box-shadow: 0 0 0 1px rgb(0 0 0 / 20%);
+    transition: all .3s;
+
+}
+
+.card:hover {
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+    transition: all .3s;
+    
+}
+
+.card-img{
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+.card-name {
+    text-transform: uppercase;
+    background: #F0131E;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+}
+
+.p-0{
+    padding: 0;
+}
+
+.nav{
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    background-color: #F0131E;
+    padding: 20px 20px;
+    box-shadow: 0 4px 2px -2px gray;
+}
+.profile-name{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.profile-img{
+    width: 20px;
+    height: 20px;
+}
+.align-right{
+    display: flex;
+    justify-content: flex-end;
+
+}
+.m-top {
+    margin-top: 100px;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.items-center{
+    justify-content: center;
+}
+
+h4{
+    color: #404040;
+    letter-spacing: .7px;
+}
+textarea {
+    color: #404040;
+    border:none;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+#post-btn{
+    margin-top: 10px;
+    padding:10px 20px;
+    border:none;
+    border-radius: 0;
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+    color: #fff;
+    background: #F0131E;
+    cursor: pointer;
+
+}
+
+input{
+    width: 100%;
+    padding: 10px 20px;
+    border:none;
+    border-radius: 0;
+    box-shadow: 0 8px 50px rgb(0 0 0 / 20%);
+
+}
+
+input:focus{
+    outline:none;
+}
+
+.post-photo {
+    width: 100%;
+    height: 100%;
+
+}
+
+.post {
+    padding: 0;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+}
+
+.post-text-wrapper {
+    padding: 10px 20px;
+    position: relative;
+
+}
+
+.newPost-text {
+    color: #404040;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.post-author{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    padding: 5px 10px;
+    font-weight: 800;
+    color: #bebebe;
+    letter-spacing: .7px;
+
+}
+
+.heart {
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 20px;
+    height: 20px;
+}
+.toFill {
+    fill : #ccc;
+}
+
+.filled {
+    fill: red;
+}
+
+.comment-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #bebebe;
+    font-size: 16px;
+}
+
+.comment-author {
+    font-weight: 700;
+    color: #F0131E;
+    letter-spacing: .7px;
+}
+
+.comment-text {
+    color: #404040;
+}
+
+.add-comment-box {
+    display: flex;
+    align-items: center;
+}
+
+.comment-btn{
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    background: #F0131E;
+    font-weight: 700;
+    letter-spacing: .7px;
+
+}
+
+.banner-img {
+    width: 100%;
+    height: 500px;
+}
